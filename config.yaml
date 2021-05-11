@@ -3,17 +3,16 @@ subject: 'cat:cs.*'
 
 # 検索キーワード
 keywords:
-        # 1つ以上該当すれば通知
         reinforcement learning: 100
         imitation learning: 100
         control as inference: 100
         skill discovery: 100
         
-        # 2つ以上該当すれば通知
+
         Variational Inference: 50
         robot: 50
         
-　      # 追加要素
+
         representation learning: 10
         skill: 2
         option: 1
