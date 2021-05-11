@@ -12,8 +12,7 @@ keywords:
         Variational Inference: 50
         robot: 50
         control: 50
-        policy: 50
-        policies: 50
+        polic: 50
 
         representation learning: 10
         skill: 2
