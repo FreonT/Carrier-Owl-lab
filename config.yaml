@@ -4,6 +4,13 @@ subject: 'cat:cs.*'
 # 検索キーワード
 keywords:
         reinforcement learning: 2
+        control as inference: 2
+        skill: 1
+        option: 1
+        manipulation: 1
+        robot: 1
+        imitation: 1
+        representation learning: 1
 
 # 通知の閾値
 score_threshold: 0
