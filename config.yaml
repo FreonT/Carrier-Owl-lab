@@ -7,9 +7,12 @@ keywords:
         imitation learning: 100
         control as inference: 100
         skill discovery: 100
+        latent structure: 100
         
 
         Variational Inference: 50
+        latent variable: 50
+        latent space: 50
         robot: 50
         control: 50
         polic: 50
