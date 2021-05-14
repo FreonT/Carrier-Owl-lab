@@ -3,9 +3,15 @@ subject: 'cat:cs.*'
 
 # 検索キーワード
 keywords:
-        kaggle: 3
-        resnet: 3
-        anomaly detection: 1
+        symbol emergence: 10
+        natural language processing: 10
+        reinforcement learning: 10
+        
+        constructive learning: 5
+        variational inference: 5
+        robot: 5
+        control: 5
+        
 
 # 通知の閾値
-score_threshold: 0
+score_threshold: 10
