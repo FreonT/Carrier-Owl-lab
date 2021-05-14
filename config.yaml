@@ -4,14 +4,19 @@ subject: 'cat:cs.*'
 # 検索キーワード
 keywords:
         symbol emergence: 10
-        natural language processing: 10
+        emergent communication: 10
+        language evolution: 10
+        language understanding: 10
         reinforcement learning: 10
         
-        constructive learning: 5
+        contrastive learning: 5
         variational inference: 5
         robot: 5
         control: 5
         
+        Vision and Language: 3
+        Transformer: 3
+        Human Robot Interaction: 3
 
 # 通知の閾値
 score_threshold: 10
