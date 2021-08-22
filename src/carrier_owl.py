@@ -55,11 +55,13 @@ def search_keyword(
         if (score != 0) and (score >= score_threshold):
             title_trans = get_translated_text('ja', 'en', title)
             abstract = abstract.replace('\n', '')
-            abstract_trans = get_translated_text('ja', 'en', abstract)
-            abstract_trans = textwrap.wrap(abstract_trans, 40)  # 40行で改行
-            abstract_trans = '\n'.join(abstract_trans)
+            # abstract_trans = get_translated_text('ja', 'en', abstract)
+            # abstract_trans = textwrap.wrap(abstract_trans, 40)  # 40行で改行
+            # abstract_trans = '\n'.join(abstract_trans)
+            abstract = textwrap.wrap(abstract, 40)  # 40行で改行
+            abstract = '\n'.join(abstract)
             result = Result(
-                    url=url, title_en=title, title_jp=title_trans, authors=authors, abstract=abstract_trans,
+                    url=url, title_en=title, title_jp=title_trans, authors=authors, abstract=abstract,
                     score=score, words=hit_keywords)
             results.append(result)
     return results
@@ -174,7 +176,7 @@ def main():
     keywords = config['keywords']
     score_threshold = float(config['score_threshold'])
 
-    day_before_yesterday = datetime.datetime.today() - datetime.timedelta(days=2)
+    day_before_yesterday = datetime.datetime.today() - datetime.timedelta(days=4)
     day_before_yesterday_str = day_before_yesterday.strftime('%Y%m%d')
     # datetime format YYYYMMDDHHMMSS
     arxiv_query = f'({subject}) AND ' \
